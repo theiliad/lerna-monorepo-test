@@ -3,7 +3,7 @@ language: node_js
 node_js:
  - '8'
 sudo: false
-if: (tag AND tag =~ ^v)
+if: (tag AND tag =~ ^v) OR (commit_message =~ ^Merge\spull\srequest)
 deploy:
   -
     provider: script
