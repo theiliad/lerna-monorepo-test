@@ -1,12 +1,13 @@
 echo "RUN DEPLOY SCRIPT"
 
-if [ "$TRAVIS_TAG" ]
+if [ "$TRAVIS_TAG" ] && [ "$TRAVIS_TAG" =~ ^v]
 then
-	echo "There's a tag"
+	echo "There's a tag, and it's a version"
 
 	echo $TRAVIS_TAG
-else
+else if 
 	echo "There's no tag"
 fi
 
+echo "Skipping deploy"
 exit 0
