@@ -7,6 +7,11 @@
   height: 40vmin;
 }
 
+.App-header {
+  flex-direction: column;
+  color: white;
+}
+
 .App-link {
   color: #61dafb;
 }
