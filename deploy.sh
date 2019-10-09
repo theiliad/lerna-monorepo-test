@@ -1,6 +1,6 @@
 echo "RUN DEPLOY SCRIPT"
 
-if [ "$TRAVIS_TAG" ] && [ "$TRAVIS_TAG" =~ ^v]
+if [ "$TRAVIS_TAG" ]
 then
 	echo "There's a tag, and it's a version"
 
