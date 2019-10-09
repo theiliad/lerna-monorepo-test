@@ -3,7 +3,7 @@ language: node_js
 node_js:
  - '8'
 sudo: false
-if: tag IS blank
+if: tag
 deploy:
   -
     provider: script
