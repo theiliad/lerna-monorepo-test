@@ -1,9 +1,9 @@
 {
   "name": "bob",
-  "version": "1.14.0",
+  "version": "1.15.0",
   "private": true,
   "dependencies": {
-    "@yourproject/common": "^1.14.0",
+    "@yourproject/common": "^1.15.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-scripts": "2.1.1"
