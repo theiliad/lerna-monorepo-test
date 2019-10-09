@@ -1,14 +1,13 @@
 dist: trusty
 language: node_js
 node_js:
- - '8'
+  - '8'
 sudo: false
-if: (tag AND tag =~ ^v) OR (commit_message =~ ^Merge\spull\srequest\s#) OR (type = pull_request)
+if: (tag AND tag =~ ^v)
 deploy:
   -
     provider: script
     script: "bash ./deploy.sh"
     skip_cleanup: true
-    if: (tag AND tag =~ ^v) OR (commit_message =~ ^Merge\spull\srequest\s#)
 notifications:
   email: false
