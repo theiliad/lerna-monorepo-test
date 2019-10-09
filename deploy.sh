@@ -1,3 +1,5 @@
+echo "RUN DEPLOY SCRIPT"
+
 if [ "$TRAVIS_TAG" ]
 then
 	echo "There's a tag"
