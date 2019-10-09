@@ -9,8 +9,6 @@ deploy:
     provider: script
     script: "bash ./deploy.sh"
     skip_cleanup: true
-    on:
-      branch: master
-      condition: (tag AND tag =~ ^v) OR (commit_message =~ ^Merge\spull\srequest\s#)
+    if: (tag AND tag =~ ^v) OR (commit_message =~ ^Merge\spull\srequest\s#)
 notifications:
   email: false
