@@ -1,6 +1,6 @@
 {
   "name": "alice",
-  "version": "1.11.0",
+  "version": "1.12.0",
   "private": true,
   "dependencies": {
     "@yourproject/common": "^1.0.0",
